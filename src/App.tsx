@@ -9,10 +9,10 @@ export default function App() {
       <h1 className="textPreset4 tablet:!text-[1.5em] tablet:!mb-[2em] !mb-[1em] text-center text-gray-600">
         Password Generator
       </h1>
-      <section className="tablet:w-[60%] desktop:w-[30%] flex w-full justify-between bg-gray-800 !p-[1em]">
+      <section className="tablet:w-[33.75em] tablet:!px-[2em] tablet:h-[5em] desktop:w-[30%] flex w-[21.4375em] items-center justify-between bg-gray-800 !p-[1em]">
         <PassswordContainer password={newPassword} />
       </section>
-      <section className="tablet:w-[60%] desktop:w-[30%] !mt-4 w-full bg-gray-800">
+      <section className="tablet:w-[33.75em] tablet:!py-[1.5em] tablet:!px-[2em] desktop:w-[30%] !mt-4 h-fit w-[21.4375em] bg-gray-800 !p-[1em]">
         <ConfigPassword />
       </section>
     </>

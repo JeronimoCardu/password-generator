@@ -13,15 +13,15 @@ export default function ConfigPassword() {
     (state) => state.setPasswordCopied,
   );
   return (
-    <section className="!p-[1em]">
+    <>
       <SliderWords />
-      <div className="!my-6 !space-y-[1em]">
+      <div className="!mb-[2rem] !space-y-[1rem]">
         <Option config="uppercase" text="Include Uppercase Letters" />
         <Option config="lowercase" text="Include LowerCase Letters" />
         <Option config="numbers" text="Include Numbers" />
         <Option config="symbols" text="Include Symbols" />
       </div>
-      <div className="bg-gray-850 flex items-center justify-between !px-[1em] !py-[0.875em]">
+      <div className="bg-gray-850 tablet:!px-[2rem] tablet:!py-[1rem] flex items-center justify-between !p-[1rem]">
         <Difficulty strength={config.length} />
       </div>
       <button
@@ -31,7 +31,7 @@ export default function ConfigPassword() {
         }}
         onMouseEnter={() => setButtonHover(true)}
         onMouseLeave={() => setButtonHover(false)}
-        className="!mt-[1em] flex w-full cursor-pointer items-center justify-center gap-[1em] !border-2 !bg-green-200 !px-[6.5em] !py-[1em] !text-gray-800 hover:!border-green-200 hover:!bg-transparent hover:!text-green-200"
+        className="!mt-[1rem] tablet:!mt-[2rem] flex w-full cursor-pointer items-center justify-center gap-[1em] !border-2 !bg-green-200 !px-[6rem] !py-[1rem] !text-gray-800 outline-0 hover:!border-green-200 hover:!bg-transparent hover:!text-green-200"
       >
         <p>GENERATE</p>
         <svg
@@ -46,6 +46,6 @@ export default function ConfigPassword() {
           />
         </svg>
       </button>
-    </section>
+    </>
   );
 }

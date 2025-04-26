@@ -18,7 +18,7 @@ export default function PassswordContainer({ password }: Props) {
     <>
       <p
         id="password"
-        className={`${password == "P4$5W0rD!" ? "text-gray-700" : "text-gray-200"} textPreset2`}
+        className={`${password == "P4$5W0rD!" ? "text-gray-700" : "text-gray-200"}  textPreset2`}
       >
         {password}
       </p>

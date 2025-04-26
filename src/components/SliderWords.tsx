@@ -5,13 +5,14 @@ export default function SliderWords() {
   const [isActive, setIsActive] = useState(false);
   return (
     <Slider.Root
+      className="!mb-[2rem]"
       max={20}
       onMouseDown={() => setIsActive(true)}
       onMouseUp={() => setIsActive(false)}
       onMouseLeave={() => setIsActive(false)}
     >
       <Slider.Label />
-      <div className="flex items-center justify-between">
+      <div className="tablet:!mb-[1rem] !mb-[.5rem] flex items-center justify-between">
         <h2 className="textPreset3 text-gray-200">Character Lenght</h2>
         <Slider.ValueText
           id="characterLength"
