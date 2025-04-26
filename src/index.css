@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+body,
+html,
+#root {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: JetBrainsBold;
+}
+
+@font-face {
+  font-family: JetBrains;
+  src: url(assets/fonts/JetBrainsMono-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: JetBrainsBold;
+  src: url(assets/fonts/static/JetBrainsMono-Bold.ttf);
+}
+@font-face {
+  font-family: JetBrainsItalic;
+  src: url(assets/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: JetBrainsItalicBold;
+  src: url(assets/fonts/static/JetBrainsMono-BoldItalic.ttf);
+}
+
+@theme {
+  --color-gray-950: #08070b;
+  --color-gray-900: #14131b;
+  --color-gray-850: #18171f;
+  --color-gray-800: #24232c;
+  --color-gray-700: #54535b;
+  --color-gray-600: #817d92;
+  --color-gray-200: #e6e5ea;
+
+  --color-green-200: #a4ffaf;
+
+  --color-yellow-300: #f8cf65;
+
+  --color-orange-400: #fb7c58;
+
+  --color-red-500: #f64a4a;
+  /* GRADIENT*/
+  /* color-gray-900 to color-gray-950*/
+
+  --breakpoint-desktop: 1441px;
+  --breakpoint-tablet: 769px;
+}
+
+* {
+  font-family: JetBrainsBold;
+}
+body {
+  background: linear-gradient(
+    to right,
+    var(--color-gray-900),
+    var(--color-gray-950)
+  );
+}
+.textPreset1 {
+  font-size: 2rem;
+  line-height: 2.625rem;
+}
+.textPreset2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.textPreset3 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+.textPreset4 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
