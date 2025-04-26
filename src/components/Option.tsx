@@ -25,7 +25,7 @@ export default function Option({ config, text }: Props) {
         onClick={() => {
           setIsCheck(!isCheck);
         }}
-        className={`${isCheck ? "!border-green-200 bg-green-200" : "!border-white"} hover:!border-green-200 flex h-[1.25em] w-[1.25em] cursor-pointer items-center justify-center !border-2`}
+        className={`${isCheck ? "!border-green-200 bg-green-200" : "!border-white"} flex h-[1.25em] w-[1.25em] cursor-pointer items-center justify-center !border-2 hover:!border-green-200`}
       >
         {isCheck && (
           <svg width="14" height="12" xmlns="http://www.w3.org/2000/svg">

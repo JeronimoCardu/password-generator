@@ -1,9 +1,9 @@
-import SliderWords from "./SliderWords";
-import Option from "./Option";
-import Difficulty from "./Difficulty";
 import usePasswordStore from "@/hooks/store";
-import { useState } from "react";
 import generatePassword from "@/utils/generatePassword";
+import { useState } from "react";
+import Difficulty from "./Difficulty";
+import Option from "./Option";
+import SliderWords from "./SliderWords";
 
 export default function ConfigPassword() {
   const [buttonHover, setButtonHover] = useState(false);
